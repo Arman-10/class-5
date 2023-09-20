@@ -1,0 +1,211 @@
+<?php
+define("PI",3.1416);
+echo PI."<br>";
+
+define("PI1",3.1416, false);
+echo PI1."<br>";
+
+$num1=50;
+$num2=5;
+echo ($num1+$num2)."<br>";
+echo "<br>";
+$num=37;
+echo ++$num."<br>";
+$num=37;
+echo --$num."<br>";
+$num1=199;
+$num2=5;
+$result= $num1-$num2;
+echo $result."<br>";
+
+$num1=15;
+$num2=15;
+$result= $num1*$num2;
+echo $result."<br>";
+
+$num1=72;
+$num2=7;
+$result= $num1/$num2;
+echo $result."<br>";
+
+
+$num1=50;
+$num2=4;
+$result= $num1%$num2;
+echo $result."<br>";
+
+$num1=3;
+$num2=3;
+$result= $num1**$num2;
+echo $result;
+
+$s=2;
+echo $s.'<br>';
+$s += 2;
+echo$s."<br>";
+
+echo 50 + 60 + 30 - 50 * 2;
+echo '<br>';
+$title = "<script>alert</script>";
+echo htmlentities($title);
+echo '<br>';
+echo "&gt;" ;
+echo '<br>';
+
+echo '<br>';
+$text = "Arman";
+echo str_repeat($text,5);
+                            // Text Break 
+echo '<br>';
+$text = " Introduction :  We live in age of science. 
+We cannot thing of our life without the blessing of science. 
+Science has invented many things. 
+These invention of our life easy and comfortable. 
+It has brought the world smaller.
+We feel the blessing of science all around us.";
+echo "<pre>";
+print_r (explode(".", $text));
+echo "</pre>";
+                        // File Extension check
+echo '<br>';
+$text = "Screenshot 2023-07-14 212013.png.jpg.png";
+$text = explode(".",$text);
+
+echo "<pre>";
+print_r ($text);
+echo "</pre>";
+if (end($text) =='png'){
+    echo "valid Extension";
+}else{
+    echo "Invalid Extension";
+}
+?>
+<br>
+<input type="file">
+<br>
+<br>
+                        <!-- YouTube Video Thambal -->
+<img alt="" style="background-color: transparent;" 
+class="yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image yt-core-image--
+content-mode-scale-aspect-fill yt-core-image--loaded" 
+src="https://i.ytimg.com/vi/j1pa36PK14E/hq720.jpg?sqp=-
+oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDmqETWTeX7kIp5jAcFx-cy7QCp7g">
+<br>
+<br>
+<img alt="" style="background-color: transparent;
+" class="yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image 
+yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" 
+src="https://i.ytimg.com/vi/smFmYtTXdZw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==
+&amp;rs=AOn4CLArJVE00qGATA1rcs3rHu43RjHxfA">
+<br>
+<!-- https://www.youtube.com/watch?v=smFmYtTXdZw&t=3s -->
+<br>
+<!-- https://i.ytimg.com/vi/smFmYtTXdZw/hq720.jpg -->
+<?php
+echo '<br>';
+echo '<br>';
+$name = ["MD.Arman", "Hossain", "Ayan"];
+var_dump($name);
+// echo implode($name," ");
+echo '<br>';
+echo '<br>';
+$name = ["MD.Arman", "Hossain", "Ayan"];
+echo count($name);
+echo '<br>';
+echo '<br>';
+$party= [
+    [
+        'person' =>1,
+        'name' => "Noyon"
+    ],
+    [
+        'person' =>2,
+        'name' => "Samir"
+    ],
+    [
+        'person' =>3,
+        'name' => "Rahi"
+    ],
+    [
+        'person' =>4,
+        'name' => "Ratul"
+    ],
+    [
+        'person' =>5,
+        'name' => "Aramn"
+    ],
+];
+echo count($party);
+echo '<br>';
+if(count($party) >5){
+    echo 'Khan finish';
+}else{
+    echo 'Khana soler';
+}
+echo '<br>';
+$shoping = ['Laptop','Mobiledisplay','Mouse'];
+array_push($shoping,'Key board','clock');
+echo '<pre>';
+    print_r($shoping);
+echo '</pre>';
+
+echo '<br>';
+$shoping = ['Laptop','Mobiledisplay','Mouse'];
+array_pop($shoping);
+echo '<pre>';
+    print_r($shoping);
+echo '</pre>';
+
+echo '<br>';
+$shoping = ['Laptop','Mobiledisplay','Mouse'];
+array_shift($shoping);
+echo '<pre>';
+    print_r($shoping);
+echo '</pre>';
+
+echo '<br>';
+$shoping = ['Laptop','Mobiledisplay','Mouse'];
+array_unshift($shoping,'Clock');
+echo '<pre>';
+    print_r($shoping);
+echo '</pre>';
+
+echo '<br>';
+$shoping = ['Laptop','Mobiledisplay','Mouse'];
+print_r(array_reverse($shoping));
+echo '<pre>';
+    print_r($shoping);
+echo '</pre>';
+
+echo '<br>';
+$shoping = array_reverse($shoping);
+echo '<pre>';
+    print_r($shoping);
+echo '</pre>';
+
+echo '<br>';
+$user= [
+    'ID' =>1,
+        'name' => "Noyon",
+        'Dep' => "CMT"
+];
+    $newuser = [
+    
+        'ID' =>2,
+        'name' => "Samir",
+        'Dep' => "CMT"
+    
+];
+echo '<pre>';
+    print_r(array_diff($user,$newuser));
+echo '</pre>';
+
+
+echo '<pre>';
+    print_r($user);
+echo '</pre>';
+
+
+echo '<pre>';
+    print_r($newuser);
+echo '</pre>';
